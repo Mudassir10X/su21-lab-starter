@@ -1,6 +1,7 @@
+// copyright 2023 Mudassir
 #include <assert.h>
 #include <string.h>
-#include "pwd_checker.h"
+#include "build/pwd_checker.h"
 /*
 Password checker
 

@@ -1,5 +1,6 @@
+// copyright 2023 Mudassir
 #include <string.h>
-#include "ex1.h"
+#include "build/ex1.h"
 
 /* Returns the number of times LETTER appears in STR.
 There are two different ways to iterate through a string.
@@ -8,8 +9,8 @@ There are two different ways to iterate through a string.
 int num_occurrences(char *str, char letter) {
     /* TODO: implement num_occurances */
     int len = strlen(str);
-    int c=0;
-    for (int i=0 ; i < len ; i++){
+    int c = 0;
+    for (int i = 0 ; i < len ; i++) {
         if (str[i] == letter)
            c++;
     }

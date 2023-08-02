@@ -1,6 +1,7 @@
+// copyright 2023 Mudassir
 #include <stdio.h>
 #include <stdlib.h>
-#include "linked_list.h"
+#include "build/linked_list.h"
 
 /* returns a new node whose data is set to DATA and next is set to NULL */
 Node *create_node(int data) {
@@ -74,24 +75,20 @@ void reverse_list(struct Node **head) {
    to the back of the list pointed to by HEAD */
 void add_to_back(Node **head, int data) {
     Node *new_node, *prev;
-    if (head == NULL)
-    {
+    if (head == NULL) {
         return;
     }
 
     new_node = create_node(data);
 
-    if (*head == NULL)
-    {
+    if (*head == NULL) {
         *head = new_node;
-
         return;
     }
 
-    for (Node *curr = *head; curr != NULL; curr = curr->next)
-    {
+    for (Node *curr = *head; curr != NULL; curr = curr->next) {
         prev = curr;
     }
-    
+
     prev->next = new_node;
 }
